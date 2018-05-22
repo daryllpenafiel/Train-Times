@@ -1,0 +1,37 @@
+body {
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: indianred;
+    text-align: center;
+    height: 100px;
+    color: whitesmoke;
+}
+
+.header h4 {
+    margin-top: -15px;
+}
+
+.header h1 {
+    padding-top: 20px;
+}
+
+.table-container, .inputs {
+    border: 2px solid gray;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.title {
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.form-group {
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+

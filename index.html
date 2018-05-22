@@ -1,0 +1,70 @@
+<!doctype HTML> 
+<html>
+
+<head>
+    <title>Train Time</title>
+    <meta charset="UTF-8">
+    
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link href="./assets/css/style.css" rel="stylesheet">
+<link href="./assets/images/train.png" rel="icon">
+
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Train Time</h1>
+        <h4>Choo Choo</h5>
+    </div> <br>
+
+    <div class="container">
+        
+        <div class="table-container">
+            <h4 class="title"> Current Train Schedule </h4>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Train Name</th>
+                        <th>Destination</th>
+                        <th>Frequency</th>
+                        <th>Next Arrival</th>
+                        <th>Minutes Away</th>
+                    </tr>
+                </thead>
+                    
+                <tbody class="rows-go-here"> </tbody>
+            </table>
+        </div><br>
+
+      <form>
+            <div class="inputs">
+                <h4 class="title"> Add Train </h4>
+                <div class="form-group">
+                <label for="exampleFormControlInput1">Train Name</label>
+                <input type="name" class="form-control" id="name-input" placeholder="train name" autocomplete="name">
+                </div>
+                <div class="form-group">
+                        <label for="exampleFormControlInput1">Destination</label>
+                        <input type="text" class="form-control" id="destination-input" placeholder="destination" autocomplete="text">
+                </div>
+                <div class="form-group">
+                        <label for="exampleFormControlInput1">First Train TIme (HH:mm - military time)</label>
+                        <input type="time" class="form-control" id="time-input" placeholder="" autocomplete="text">
+                </div>
+                <div class="form-group">
+                        <label for="exampleFormControlInput1">Frequency</label>
+                        <input type="number" class="form-control" id="frequency-input" placeholder="frequency" autocomplete="text">
+                </div>
+                <input class="btn btn-primary" type="submit" value="Submit" id="submitbutton">
+            </div>
+            
+        </form>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
+</body>
+</html>
