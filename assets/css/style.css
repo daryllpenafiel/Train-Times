@@ -1,5 +1,5 @@
 body {
-    box-sizing: border-box;
+    background-color: darkslategray;
 }
 
 .header {
@@ -7,14 +7,18 @@ body {
     text-align: center;
     height: 100px;
     color: whitesmoke;
+    border-top: 2px solid whitesmoke;
+    border-bottom: 2px solid whitesmoke;
 }
 
 .header h4 {
     margin-top: -15px;
+    font-family: 'Fjalla One', sans-serif;
 }
 
-.header h1 {
-    padding-top: 20px;
+h1 {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 35px;
 }
 
 .table-container, .inputs {
@@ -22,6 +26,7 @@ body {
     margin: auto;
     padding: 10px;
     border-radius: 10px;
+    background-color: whitesmoke;
 }
 
 .title {
@@ -35,3 +40,11 @@ body {
     padding-bottom: 10px;
 }
 
+#submitbutton {
+    background-color: indianred;
+    color: white;
+}
+
+th, td {
+    text-align: center;
+}
