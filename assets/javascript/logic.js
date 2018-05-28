@@ -1,14 +1,4 @@
 $(document).ready(function(){
-
-    var config = {
-        apiKey: "AIzaSyCc-YOZcerl9v5B7QY6bf82NXqWL1uGArU",
-        authDomain: "train-time-a7eee.firebaseapp.com",
-        databaseURL: "https://train-time-a7eee.firebaseio.com",
-        projectId: "train-time-a7eee",
-        storageBucket: "train-time-a7eee.appspot.com",
-        messagingSenderId: "167625742451"
-      };
-      firebase.initializeApp(config);
     
     var databaseRef = firebase.database().ref();
 
@@ -25,7 +15,7 @@ $(document).ready(function(){
 
         if (newTrain.trainName && newTrain.destination && newTrain.freq && newTrain.firstTrain) {
             databaseRef.push(newTrain);
-            $("input").val("");
+            $(".form-control").val("");
         } else {
             alert("Please fill in all fields.");
         }
