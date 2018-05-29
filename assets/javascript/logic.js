@@ -23,6 +23,12 @@ $(document).ready(function(){
 
     })
 
+    //Remove Train by Clicking Remove Button
+
+    $(".btn-danger").on("click",function(){
+        $(parent).clear();
+    })
+
     //Accept Enter as a Submit Button
     $(document).on("keypress",function(){
         if (event.keyCode === 13) {
@@ -66,6 +72,12 @@ $(document).ready(function(){
             var freqRow = $("<td>").text(freqOutput).appendTo(newRow);
             var nextArrivalRow = $("<td>").text(nextArrivalOutput).appendTo(newRow);
             var minutesAwayRow = $("<td>").text(minutesAwayOutput).appendTo(newRow);
+            
+            //remove button
+            var button = $("<button>").addClass("btn btn-danger btn-number");
+            var negativeSign = $("<span>").addClass("glyphicon glyphicon-minus").appendTo(button);
+            var removeButton=$("<td>").append(button);
+            newRow.append(removeButton);
         
         $(".rows-go-here").prepend(newRow);
     })

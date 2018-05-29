@@ -48,3 +48,8 @@ h1 {
 th, td {
     text-align: center;
 }
+
+.btn-danger {
+    height: 20px;
+    padding: 0px 12px;
+}
