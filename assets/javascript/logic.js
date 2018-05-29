@@ -25,8 +25,8 @@ $(document).ready(function(){
 
     //Remove Train by Clicking Remove Button
 
-    $(".btn-danger").on("click",function(){
-        $(parent).clear();
+    $(".table").on("click",".btn-danger",function(){
+        $(this).closest('tr').remove();
     })
 
     //Accept Enter as a Submit Button
